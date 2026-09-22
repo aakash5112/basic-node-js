@@ -2,7 +2,7 @@ const express = require("express");
 const session = require("express-session");
 const path = require("path");
 
-const { router: authRoutes } = require("./routes/auth");
+const { router: authRoutes, isAuthenticated } = require("./routes/auth");
 const studentRoutes = require("./routes/student");
 const teacherRoutes = require("./routes/teacher");
 
@@ -19,7 +19,6 @@ app.use(
     resave: false,
     saveUninitialized: false,
     cookie: {
-
       httpOnly: true,
       maxAge: 1000 * 60 * 10,
     },
@@ -31,6 +30,7 @@ app.get("/", (req, res) => {
 });
 
 app.use(authRoutes);
+app.use(isAuthenticated);
 app.use("/student", studentRoutes);
 app.use("/teacher", teacherRoutes);
 

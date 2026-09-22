@@ -1,8 +1,7 @@
 const express = require("express");
 const router = express.Router();
-const { isAuthenticated } = require("./auth");
 
-router.get("/home", isAuthenticated, (req, res) => {
+router.get("/home", (req, res) => {
   if (req.session.user.role !== "teacher") {
     return res.redirect("/student/home");
   }
@@ -10,7 +9,7 @@ router.get("/home", isAuthenticated, (req, res) => {
   res.redirect("/teacher-home.html");
 });
 
-router.get("/profile", isAuthenticated, (req, res) => {
+router.get("/profile", (req, res) => {
   if (req.session.user.role !== "teacher") {
     return res.redirect("/student/home");
   }
@@ -18,7 +17,7 @@ router.get("/profile", isAuthenticated, (req, res) => {
   res.redirect("/teacher-profile.html");
 });
 
-router.get("/timetable", isAuthenticated, (req, res) => {
+router.get("/timetable", (req, res) => {
   if (req.session.user.role !== "teacher") {
     return res.redirect("/student/home");
   }
