@@ -1,0 +1,20 @@
+Problems with nodejs
+Problem 1 — Routing is manual
+Problem 2 — Request body is manual
+Problem 3 — Query parameters are manual
+Problem 4 — Dynamic parameters are manual
+
+What is Express.js?
+Express.js is a lightweight web framework built on top of Node.js 
+that simplifies building web servers and APIs.
+
+Express Routing
+ragular routes
+Dynamic routes (req.params)
+
+
+
+Express Router
+Express Router allows us to group related routes and keep them in separate files. 
+It helps make an Express application modular, organized, and easier to maintain.
+

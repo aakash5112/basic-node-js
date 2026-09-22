@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="student-app">
+        <header class="page-header">
+            <div>
+                <span class="mini-title">Student Management System</span>
+                <h1>Student Registration Form</h1>
+            </div>
+            <button class="primary-button" type="button">Save Student</button>
+        </header>
+
+        <form class="student-form">
+            <section class="form-section">
+                <div class="section-heading">
+                    <span class="section-icon">01</span>
+                    <h2>Personal Information</h2>
+                </div>
+
+                <div class="form-grid">
+                    <div class="form-field">
+                        <label for="studentId">Student ID</label>
+                        <input type="text" id="studentId" name="studentId" placeholder="STU-2026-001">
+                    </div>
+                    <div class="form-field">
+                        <label for="admissionNo">Admission No.</label>
+                        <input type="text" id="admissionNo" name="admissionNo" placeholder="ADM-4567">
+                    </div>
+                    <div class="form-field">
+                        <label for="firstName">First Name</label>
+                        <input type="text" id="firstName" name="firstName" placeholder="Enter first name">
+                    </div>
+                    <div class="form-field">
+                        <label for="middleName">Middle Name</label>
+                        <input type="text" id="middleName" name="middleName" placeholder="Enter middle name">
+                    </div>
+                    <div class="form-field">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" id="lastName" name="lastName" placeholder="Enter last name">
+                    </div>
+                    <div class="form-field">
+                        <label for="dob">Date of Birth</label>
+                        <input type="date" id="dob" name="dob">
+                    </div>
+                    <div class="form-field">
+                        <label for="gender">Gender</label>
+                        <select id="gender" name="gender">
+                            <option value="">Select Gender</option>
+                            <option>Female</option>
+                            <option>Male</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+                    <div class="form-field">
+                        <label for="nationality">Nationality</label>
+                        <input type="text" id="nationality" name="nationality" placeholder="Nationality">
+                    </div>
+                    <div class="form-field">
+                        <label for="bloodGroup">Blood Group</label>
+                        <select id="bloodGroup" name="bloodGroup">
+                            <option value="">Select</option>
+                            <option>A+</option>
+                            <option>A-</option>
+                            <option>B+</option>
+                            <option>B-</option>
+                            <option>O+</option>
+                            <option>O-</option>
+                            <option>AB+</option>
+                            <option>AB-</option>
+                        </select>
+                    </div>
+                    <div class="form-field">
+                        <label for="photo">Student Photo</label>
+                        <input type="file" id="photo" name="photo">
+                    </div>
+                </div>
+            </section>
+
+            <section class="form-section">
+                <div class="section-heading">
+                    <span class="section-icon">02</span>
+                    <h2>Contact Information</h2>
+                </div>
+
+                <div class="form-grid">
+                    <div class="form-field">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="student@example.com">
+                    </div>
+                    <div class="form-field">
+                        <label for="mobile">Mobile Number</label>
+                        <input type="tel" id="mobile" name="mobile" placeholder="+1 234 567 890">
+                    </div>
+                    <div class="form-field">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+1 234 567 890">
+                    </div>
+                    <div class="form-field full-width">
+                        <label for="address">Current Address</label>
+                        <textarea id="address" name="address" rows="3" placeholder="Street, city, state, country"></textarea>
+                    </div>
+                    <div class="form-field">
+                        <label for="city">City</label>
+                        <input type="text" id="city" name="city" placeholder="City">
+                    </div>
+                    <div class="form-field">
+                        <label for="state">State</label>
+                        <input type="text" id="state" name="state" placeholder="State">
+                    </div>
+                    <div class="form-field">
+                        <label for="country">Country</label>
+                        <input type="text" id="country" name="country" placeholder="Country">
+                    </div>
+                    <div class="form-field">
+                        <label for="postalCode">Postal Code</label>
+                        <input type="text" id="postalCode" name="postalCode" placeholder="Postal Code">
+                    </div>
+                </div>
+            </section>
+
+            <section class="form-section">
+                <div class="section-heading">
+                    <span class="section-icon">03</span>
+                    <h2>Academic Information</h2>
+                </div>
+
+                <div class="form-grid">
+                    <div class="form-field">
+                        <label for="program">Program</label>
+                        <select id="program" name="program">
+                            <option value="">Select Program</option>
+                            <option>Bachelor of Science</option>
+                            <option>Bachelor of Arts</option>
+                            <option>Bachelor of Technology</option>
+                            <option>Diploma</option>
+                            <option>Master's Program</option>
+                        </select>
+                    </div>
+                    <div class="form-field">
+                        <label for="department">Department</label>
+                        <select id="department" name="department">
+                            <option value="">Select Department</option>
+                            <option>Computer Science</option>
+                            <option>Information Technology</option>
+                            <option>Business Administration</option>
+                            <option>Engineering</option>
+                            <option>Arts & Humanities</option>
+                        </select>
+                    </div>
+                    <div class="form-field">
+                        <label for="course">Course</label>
+                        <input type="text" id="course" name="course" placeholder="Course name">
+                    </div>
+                    <div class="form-field">
+                        <label for="year">Year</label>
+                        <select id="year" name="year">
+                            <option value="">Select Year</option>
+                            <option>1st Year</option>
+                            <option>2nd Year</option>
+                            <option>3rd Year</option>
+                            <option>4th Year</option>
+                            <option>Postgraduate</option>
+                        </select>
+                    </div>
+                    <div class="form-field">
+                        <label for="semester">Semester</label>
+                        <select id="semester" name="semester">
+                            <option value="">Select Semester</option>
+                            <option>Semester 1</option>
+                            <option>Semester 2</option>
+                            <option>Semester 3</option>
+                            <option>Semester 4</option>
+                            <option>Semester 5</option>
+                            <option>Semester 6</option>
+                            <option>Semester 7</option>
+                            <option>Semester 8</option>
+                        </select>
+                    </div>
+                    <div class="form-field">
+                        <label for="section">Section</label>
+                        <input type="text" id="section" name="section" placeholder="A / B / C">
+                    </div>
+                    <div class="form-field">
+                        <label for="rollNo">Roll Number</label>
+                        <input type="text" id="rollNo" name="rollNo" placeholder="Roll Number">
+                    </div>
+                    <div class="form-field">
+                        <label for="batch">Batch</label>
+                        <input type="text" id="batch" name="batch" placeholder="2026">
+                    </div>
+                    <div class="form-field">
+                        <label for="advisor">Academic Advisor</label>
+                        <input type="text" id="advisor" name="advisor" placeholder="Advisor name">
+                    </div>
+                </div>
+            </section>
+
+            <section class="form-section">
+                <div class="section-heading">
+                    <span class="section-icon">04</span>
+                    <h2>Parents / Guardian</h2>
+                </div>
+
+                <div class="form-grid">
+                    <div class="form-field">
+                        <label for="guardianName">Guardian Name</label>
+                        <input type="text" id="guardianName" name="guardianName" placeholder="Guardian name">
+                    </div>
+                    <div class="form-field">
+                        <label for="guardianRelation">Relationship</label>
+                        <select id="guardianRelation" name="guardianRelation">
+                            <option value="">Select</option>
+                            <option>Father</option>
+                            <option>Mother</option>
+                            <option>Brother</option>
+                            <option>Sister</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+                    <div class="form-field">
+                        <label for="guardianPhone">Guardian Phone</label>
+                        <input type="tel" id="guardianPhone" name="guardianPhone" placeholder="Guardian phone">
+                    </div>
+                    <div class="form-field">
+                        <label for="guardianEmail">Guardian Email</label>
+                        <input type="email" id="guardianEmail" name="guardianEmail" placeholder="guardian@example.com">
+                    </div>
+                </div>
+            </section>
+
+            <section class="form-section">
+                <div class="section-heading">
+                    <span class="section-icon">05</span>
+                    <h2>Enrollment & Other Details</h2>
+                </div>
+
+                <div class="form-grid">
+                    <div class="form-field">
+                        <label for="admissionDate">Admission Date</label>
+                        <input type="date" id="admissionDate" name="admissionDate">
+                    </div>
+                    <div class="form-field">
+                        <label for="studentStatus">Student Status</label>
+                        <select id="studentStatus" name="studentStatus">
+                            <option value="">Select Status</option>
+                            <option>Active</option>
+                            <option>Pending</option>
+                            <option>Graduated</option>
+                            <option>On Leave</option>
+                            <option>Suspended</option>
+                        </select>
+                    </div>
+                    <div class="form-field">
+                        <label for="hostel">Hostel / Residence</label>
+                        <select id="hostel" name="hostel">
+                            <option value="">Select</option>
+                            <option>Hostel</option>
+                            <option>Day Scholar</option>
+                            <option>Residential</option>
+                        </select>
+                    </div>
+                    <div class="form-field">
+                        <label for="scholarship">Scholarship</label>
+                        <select id="scholarship" name="scholarship">
+                            <option value="">Select</option>
+                            <option>Merit Scholarship</option>
+                            <option>Need Based</option>
+                            <option>Sports Scholarship</option>
+                            <option>No Scholarship</option>
+                        </select>
+                    </div>
+                    <div class="form-field full-width">
+                        <label for="medicalInfo">Medical / Health Information</label>
+                        <textarea id="medicalInfo" name="medicalInfo" rows="3" placeholder="Allergies, disability, medical notes"></textarea>
+                    </div>
+                </div>
+            </section>
+
+            <!-- <section class="form-section">
+                <div class="section-heading">
+                    <span class="section-icon">06</span>
+                    <h2>Documents</h2>
+                </div>
+
+                <div class="form-grid">
+                    <div class="form-field">
+                        <label for="idProof">ID Proof</label>
+                        <input type="file" id="idProof" name="idProof">
+                    </div>
+                    <div class="form-field">
+                        <label for="marksheet">Previous Marksheet</label>
+                        <input type="file" id="marksheet" name="marksheet">
+                    </div>
+                    <div class="form-field">
+                        <label for="passport">Passport / Document</label>
+                        <input type="file" id="passport" name="passport">
+                    </div>
+                </div>
+            </section> -->
+
+            <section class="form-actions">
+                <button class="secondary-button" type="reset">Clear Form</button>
+                <button class="primary-button" type="submit">Submit Student</button>
+            </section>
+        </form>
+
+        <section class="table-section">
+            <div class="section-heading table-heading">
+                <span class="section-icon">07</span>
+                <h2>Student Records</h2>
+            </div>
+
+            <div class="table-wrapper">
+                <table class="student-table">
+                    <thead>
+                        <tr>
+                            <th>Student ID</th>
+                            <th>Admission No.</th>
+                            <th>First Name</th>
+                            <th>Middle Name</th>
+                            <th>Last Name</th>
+                            <th>DOB</th>
+                            <th>Gender</th>
+                            <th>Nationality</th>
+                            <th>Blood Group</th>
+                            <th>Photo</th>
+                            <th>Email</th>
+                            <th>Mobile</th>
+                            <th>Phone</th>
+                            <th>Address</th>
+                            <th>City</th>
+                            <th>State</th>
+                            <th>Country</th>
+                            <th>Postal Code</th>
+                            <th>Program</th>
+                            <th>Department</th>
+                            <th>Course</th>
+                            <th>Year</th>
+                            <th>Semester</th>
+                            <th>Section</th>
+                            <th>Roll Number</th>
+                            <th>Batch</th>
+                            <th>Advisor</th>
+                            <th>Guardian Name</th>
+                            <th>Relationship</th>
+                            <th>Guardian Phone</th>
+                            <th>Guardian Email</th>
+                            <th>Admission Date</th>
+                            <th>Status</th>
+                            <th>Hostel / Residence</th>
+                            <th>Scholarship</th>
+                            <th>Medical Info</th>
+                        </tr>
+                    </thead>
+                    <tbody id="student-table-body">
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+
+    <script src="script2.js"></script>
+</body>
+</html>
